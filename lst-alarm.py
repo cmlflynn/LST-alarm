@@ -76,6 +76,8 @@ while not toggle_flip:
     if len(str(remain_mins))==1:
         remain_mins = "0"+str(remain_mins)
     remain_secs = np.around(remain_secs,1)
+    if len(str(remain_secs).split(".")[0]) == 1:
+        remain_secs = "0"+str(remain_secs)
     remain_time_hms = str(remain_hrs)+":"+str(remain_mins)+":"+str(remain_secs)
     
     # print out the clocks and remain time etc
