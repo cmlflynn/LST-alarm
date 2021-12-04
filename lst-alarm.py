@@ -97,6 +97,6 @@ freq = 440  # Hz
 
 print("Your LST has been reached")
 for i in range(5):
-    os.system('play -nq -t alsa synth {} sine {}'.format(duration, freq))
+    os.system('play --norm=-10 -nq -t alsa synth {} sine {}'.format(duration, freq))
     time.sleep(0.3)
 
